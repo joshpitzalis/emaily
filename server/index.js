@@ -22,5 +22,5 @@ app.get('/', (req, res) => {
   res.send({ hi: 'hey' })
 })
 require('./routes/authRoutes')(app)
-const PORT = process.env.PORT || 5000
-app.listen(PORT)
+
+app.listen(process.env.PORT || 5000)
