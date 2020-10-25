@@ -8,7 +8,7 @@ require('./services/passport')
 
 const app = express()
 
-mongoose.connect(keys.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(keys.mongoURI, { useNewUrlParser: true })
 
 app.use(
   cookieSession({
